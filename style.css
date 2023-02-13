@@ -118,12 +118,8 @@ nav p,li a{
 }
 #div4{
     background-color:black;
-    height:700px;
+    height:650px;
     width:100%;
-}
-.skills{
-    position:relative;
-    left:500px;
 }
 tr,td{
     padding:20px;
@@ -140,13 +136,9 @@ tr,td{
     width:100%;
 }
 #div5 h5{
-    position:relative;
-    left:620px;
     color:white;
 }
 #j1{
-    position:relative;
-    left:570px;
     width: 350px;
     height: 120px;
     background-image:linear-gradient(#28ABB9,#0F6292,#112b3c);
@@ -163,4 +155,40 @@ tr,td{
     color:white;
     height:100px;
     padding:30px;
+}
+@media(max-width: 480px){
+    body{
+        overflow-x:hidden;
+    }
+    nav{
+        padding:10px;
+        width:100%; 
+    }
+    #div1{
+        height: 850px;
+    }
+    #div1 h1{
+        font-size: 50px;
+    }
+    #div1 h2{
+        font-size:40px;
+    }
+    #div2{
+        height:750px;
+        padding:20px;
+    }
+    #div2 #image,#about{
+        width:100%;
+    }
+    #div2 #image{
+        position:relative;
+        left:100px;
+    }
+    #div2 #about h1{
+        position: relative;
+        left: 150px;
+    }
+    #div3{
+        height:1250px;
+    }
 }
