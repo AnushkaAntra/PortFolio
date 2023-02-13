@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    overflow-x:hidden;
+}
+nav{
+    position:fixed;
+    width:100%;
+    padding: 10px;
+    background-color: #112B3C;
+    overflow:hidden;
+}
+nav ul{
+    list-style-type:none;
+}
+nav ul,p{
+    float:left;
+}
+li{
+    float:left;
+}
+nav p,li a{
+    display:inline-block;
+    color: white;
+    padding:12px 15px;
+    text-decoration: none;
+    background:
+     linear-gradient(
+         to right,
+         rgba(100, 200, 200, 1),
+         rgba(100, 200, 200, 1)
+     ),
+     linear-gradient(
+         to right,
+         rgba(255, 0, 0, 1),
+         rgba(255, 0, 180, 1),
+         rgba(0, 100, 200, 1)
+     );
+     background-size: 100% 3px, 0 3px;
+     background-position: 100% 100%, 0 100%;
+     background-repeat: no-repeat;
+     transition: background-size 400ms;
+ }
+ nav p:hover,li a:hover{
+     background-size: 0 3px, 100% 3px;
+     color:white;
+ }
+.img{
+    width:250px;
+    border: 10px solid #0F6292;
+    border-radius: 50%;
+}
+#div1{
+    background-image: url("https://www.hdimages.pics/images/quotes/english/general/bokeh-effect-on-dark-background-52650-308200-960-540.jpg");
+    background-size: cover ;
+    height:792px;
+    background-repeat:no-repeat ;
+    width:100%;
+}
+#i1{
+    position:relative;
+    top:150px;
+}
+#div1 h1{
+    position: relative;
+    top: 200px;
+    color:white;
+    font-size:65px;
+}
+#div1 h2{
+    position: relative;
+    top: 215px;
+    color:#28ABB9;
+    font-size: 50px;
+}
+#div2{
+    background-color: black;
+    padding:150px;
+    height:600px;
+    width:100%;
+}
+#div2 #image,#about{
+    width: 50%;
+    float:left;
+}
+.icons{
+    width:60px;
+    display: inline-block;
+    transform: scale(0.5);
+    transition: 0.5s;
+   }
+.icons:hover {
+    transform: scale(0.5) translateY(-15px);
+}
+#div3{
+    background-color:black;
+    height:600px;
+    padding:15px;
+    width:100%;
+}
+#about h1, #div3 h1, #div4 h1,#div5 h1{
+    color:#28ABB9;
+    font-size: 50px;
+    text-decoration: underline;
+}
+#about p{
+    color:white;
+    font-size: large;
+    text-align: justify;
+}
+.card-body{
+    background-image:linear-gradient(#112b3c,#0F6292,#28ABB9);
+}
+#div4{
+    background-color:black;
+    height:700px;
+    width:100%;
+}
+.skills{
+    position:relative;
+    left:500px;
+}
+tr,td{
+    padding:20px;
+}
+.x1{
+    width:80px;
+    height:80px;
+    border:white;
+    border-radius: 50%;
+}
+#div5{
+    background-color: black;
+    height:400px;
+    width:100%;
+}
+#div5 h5{
+    position:relative;
+    left:620px;
+    color:white;
+}
+#j1{
+    position:relative;
+    left:570px;
+    width: 350px;
+    height: 120px;
+    background-image:linear-gradient(#28ABB9,#0F6292,#112b3c);
+    color:white;
+    display: inline-block;
+    transform: scale(1.0);
+    transition: 1.0s;
+}
+#j1:hover {
+    transform: scale(1.0) translateY(-15px);
+}
+.footer{
+    background-color:#112B3C ;
+    color:white;
+    height:100px;
+    padding:30px;
+}
