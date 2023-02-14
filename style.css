@@ -10,19 +10,21 @@ body{
 }
 nav{
     position:fixed;
-    width:100%;
+    z-index: 5;
+    opacity: 0.9;
+    width: 100%;
     padding: 10px;
     background-color: #112B3C;
-    overflow:hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-img{
+    display:none;
 }
 nav ul{
     list-style-type:none;
-}
-nav ul,p{
-    float:left;
-}
-li{
-    float:left;
+    display:flex;
+    flex-direction:row;
 }
 nav p,li a{
     display:inline-block;
@@ -45,55 +47,54 @@ nav p,li a{
      background-position: 100% 100%, 0 100%;
      background-repeat: no-repeat;
      transition: background-size 400ms;
- }
- nav p:hover,li a:hover{
+}
+nav p:hover,li a:hover{
      background-size: 0 3px, 100% 3px;
      color:white;
- }
-.img{
-    width:250px;
-    border: 10px solid #0F6292;
-    border-radius: 50%;
 }
 #div1{
     background-image: url("https://www.hdimages.pics/images/quotes/english/general/bokeh-effect-on-dark-background-52650-308200-960-540.jpg");
-    background-size: cover ;
-    height:792px;
-    background-repeat:no-repeat ;
+    background-size: cover;
     width:100%;
+    height:800px;
 }
-#i1{
-    position:relative;
-    top:150px;
+.img{
+    width: 250px;
+    border:10px solid #0F6292;
+    border-radius:50%;
 }
-#div1 h1{
+#image1{
     position: relative;
-    top: 200px;
-    color:white;
+    top: 150px;
+}
+#name{
+    position: relative;
+    top:170px;
+}
+#name h1{
     font-size:65px;
+    color:white;
 }
-#div1 h2{
-    position: relative;
-    top: 215px;
-    color:#28ABB9;
-    font-size: 50px;
+#name h2{
+    font-size:55px;
+    color: #28ABB9;
 }
 #div2{
     background-color: black;
-    padding:150px;
-    height:600px;
-    width:100%;
+    width: 100%;
+    height: 600px;
 }
 #div2 #image,#about{
-    width: 50%;
-    float:left;
+    width:50%;
+    padding:150px;
+    float: left;
 }
 .icons{
     width:60px;
     display: inline-block;
     transform: scale(0.5);
     transition: 0.5s;
-   }
+}
 .icons:hover {
     transform: scale(0.5) translateY(-15px);
 }
@@ -103,92 +104,127 @@ nav p,li a{
     padding:15px;
     width:100%;
 }
-#about h1, #div3 h1, #div4 h1,#div5 h1{
-    color:#28ABB9;
-    font-size: 50px;
+#about h1,#div3 h1,#div4 h1,#div5 h1{
+    color: #28ABB9;
+    font-size: 60px;
     text-decoration: underline;
 }
 #about p{
     color:white;
-    font-size: large;
     text-align: justify;
 }
 .card-body{
-    background-image:linear-gradient(#112b3c,#0F6292,#28ABB9);
+    background-image:linear-gradient(#28ABB9, #0F6292, #112B3C) ;
 }
 #div4{
-    background-color:black;
-    height:650px;
+    background-color: black;
+    padding:20px;
     width:100%;
+    height:650px;
 }
 tr,td{
-    padding:20px;
+    padding: 30px;
 }
 .x1{
-    width:80px;
-    height:80px;
-    border:white;
+    width:70px;
+    height:70px;
     border-radius: 50%;
+}
+#div4 table td .progress{
+    width: 300px;
+    height:5px;
 }
 #div5{
     background-color: black;
-    height:400px;
     width:100%;
-}
-#div5 h5{
-    color:white;
+    height:450px;
 }
 #j1{
-    width: 350px;
-    height: 120px;
-    background-image:linear-gradient(#28ABB9,#0F6292,#112b3c);
+    padding:20px;
+    width:fit-content;
+    height:auto;
     color:white;
-    display: inline-block;
-    transform: scale(1.0);
-    transition: 1.0s;
+    background-image:linear-gradient(#28ABB9, #0F6292, #112B3C);
+    transform: scale(1);
+    transition: 0.5s;
 }
 #j1:hover {
-    transform: scale(1.0) translateY(-15px);
+    transform: scale(1) translateY(-15px);
+}
+#div5 h5{
+    color: white;
 }
 .footer{
-    background-color:#112B3C ;
+    background-color: #112B3C;
     color:white;
-    height:100px;
-    padding:30px;
+    padding:20px;
+    height:auto;
 }
-@media(max-width: 480px){
+
+ @media(max-width: 468px){
     body{
         overflow-x:hidden;
     }
-    nav{
-        padding:10px;
-        width:100%; 
+    .nav-img{
+        display: block;
     }
+    nav ul{
+        display: none; 
+     }
     #div1{
-        height: 850px;
-    }
-    #div1 h1{
-        font-size: 50px;
-    }
-    #div1 h2{
+        height: 650px;
+        width: 100%;
+     }
+    #name h1{
         font-size:40px;
     }
+    #name h2{
+        font-size:30px;
+    }
     #div2{
-        height:750px;
-        padding:20px;
+        height: 800px;
     }
     #div2 #image,#about{
         width:100%;
+        padding:20px;  
+        display: grid;
+        place-items: center; 
     }
-    #div2 #image{
-        position:relative;
-        left:100px;
-    }
-    #div2 #about h1{
-        position: relative;
-        left: 150px;
+    #about h1,#div3 h1,#div4 h1,#div5 h1{
+        font-size: 40px;
     }
     #div3{
         height:auto;
     }
-}
+    #div4 table td .progress{
+        width:100px;
+    }
+ }
+
+ @media(min-width:469px) and (max-width: 1000px){
+    #div1{
+        height: 650px;
+        width: 100%;
+     }
+    #name h1{
+        font-size:50px;
+    }
+    #name h2{
+        font-size:40px;
+    }
+    #div2{
+        height: 700px;
+    }
+    #div2 #image,#about{
+        width:100%;
+        padding:20px; 
+        display: grid;
+        place-items: center;  
+    }
+    #about h1,#div3 h1,#div4 h1,#div5 h1{
+        font-size: 50px;
+    }
+    #div3{
+        height:auto;
+    }
+ }
