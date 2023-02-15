@@ -84,9 +84,15 @@ nav p:hover,li a:hover{
     width: 100%;
     height: 600px;
 }
+#div2 #about{
+    padding:50px;
+    padding-top:150px;
+}
+#div2 #image{
+    padding:150px;
+}
 #div2 #image,#about{
     width:50%;
-    padding:150px;
     float: left;
 }
 .icons{
@@ -103,15 +109,15 @@ nav p:hover,li a:hover{
     font-size: 60px;
     text-decoration: underline;
 }
-#about p{
-    color:white;
-    text-align: justify;
-}
 #div3{
     background-color: black;
     padding:15px;
     width:100%;
     height: 600px;
+}
+#about p{
+    color:white;
+    text-align: justify;
 }
 .card-body{
     background-image:linear-gradient(#28ABB9, #0F6292, #112B3C) ;
@@ -126,9 +132,20 @@ tr,td{
     padding: 30px;
 }
 .x1{
-    width:70px;
-    height:70px;
+    width:40px;
+    height:40px;
     border-radius: 50%;
+}
+#div4 .skills {
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+    color:white;
+  }
+#div4 #table1, #table2 {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
 }
 #div4 table td .progress{
     width: 300px;
@@ -137,7 +154,7 @@ tr,td{
 #div5{
     background-color: black;
     width:100%;
-    height:450px;
+    height:770px;
 }
 #j1{
     padding:20px;
@@ -157,11 +174,43 @@ tr,td{
 .footer{
     background-color: #112B3C;
     color:white;
-    padding:20px;
-    height:auto;
+    width:100%;
+    height: 350px;
+}   
+.footer .quote,.message{
+    float: left;
+    text-align: justify;
+    padding: 50px 150px;
+    width:50%;
+}
+.quote textarea{
+    background-color: #112B3C;
+    border: 2px solid #28ABB9;
+    border-radius: 10px;
+    padding:10px;
+    width:300px;
+    height:100px;
+}
+.message h3{
+    color: #28ABB9;
+}
+.message h4{
+    color: #28ABB9;
+}
+#input, #btn2{
+    background-color: #112B3C;
+    padding:10px;
+    border: none;
+    border-bottom: 2px solid #28ABB9;
+    color:#0F6292;
+}
+#btn2:hover{
+    border: none;
+    border-bottom: 2px solid #28ABB9;
+    color:white;
 }
 
- @media(max-width: 468px){
+@media(max-width: 468px){
     body{
         overflow-x:hidden;
     }
@@ -193,15 +242,30 @@ tr,td{
     #about h1,#div3 h1,#div4 h1,#div5 h1{
         font-size: 40px;
     }
-    #div3{
+    #div3, #div4{
         height:auto;
+    }
+    #div4 #table1,#table2{
+        padding: 10px 5px;
+        border: 2px solid #28ABB9;
+        border-radius: 30px;
     }
     #div4 table td .progress{
         width:100px;
+        height: 3px;
     }
- }
-
- @media(min-width:469px) and (max-width: 1000px){
+    #div5{
+        height: 1000px;
+    }
+    .footer{
+        height: 630px;
+    }
+    .footer .quote,.message{
+        width:100%;
+        padding: 30px;
+    } 
+}
+@media(min-width:469px) and (max-width: 1200px){
     #div1{
         height: 650px;
         width: 100%;
@@ -224,7 +288,26 @@ tr,td{
     #about h1,#div3 h1,#div4 h1,#div5 h1{
         font-size: 50px;
     }
-    #div3{
+    #div3, #div4{
         height:auto;
     }
- }
+    #div4 #table1,#table2{
+        border: 2px solid #28ABB9;
+        border-radius: 30px;
+    }
+    #div5{
+        height: 1000px;
+    }
+    .footer{
+        height: 600px;
+    }
+    .footer .quote,.message{
+        width:100%;
+        padding: 30px;
+        display: grid;
+        place-items: center;
+    } 
+    .quote q{
+        width:500px;
+    }
+}
