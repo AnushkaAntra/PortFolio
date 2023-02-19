@@ -82,14 +82,16 @@ nav p:hover,li a:hover{
 #div2{
     background-color: black;
     width: 100%;
-    height: 600px;
+    height: 500px;
 }
 #div2 #about{
     padding:50px;
-    padding-top:150px;
+    padding-top:100px;
 }
 #div2 #image{
-    padding:150px;
+    padding-top: 100px;
+    display: grid;
+    place-items: center;
 }
 #div2 #image,#about{
     width:50%;
@@ -237,7 +239,7 @@ input[type="email"], #btn1{
         font-size:30px;
     }
     #div2{
-        height: 800px;
+        height: auto;
     }
     #div2 #image,#about{
         width:100%;
@@ -280,7 +282,7 @@ input[type="email"], #btn1{
         font-size:40px;
     }
     #div2{
-        height: 700px;
+        height: auto;
     }
     #div2 #image,#about{
         width:100%;
