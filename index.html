@@ -13,12 +13,12 @@
         $(document).ready(function(){
             $(".nav-img").click(function(){
                 $("nav ul").toggle();
-            })
-        })
+            });
+        });
     </script>
     <title>Anushka Antra</title>
 </head>
-<body>
+<body id="body">
     <header>
         <nav>
             <div class="nav-logo">
@@ -171,30 +171,37 @@
                 <center><h1>Projects</h1></center>
             </div>
             <br><br>
-            <div class="row gy-5">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="img-fluid" src="Screenshot (57).png" alt="project1" width="auto">
-                        </div>
-                        <div class="card-footer">
-                            <h4>Instagram Clone <a href="https://anushkaantra.github.io/InstagramClone/"><img class="redirect"  src="https://cdn-icons-png.flaticon.com/128/9661/9661440.png" alt="redirect" width="20px"></a></h4>
-                            <p>Instagram Clone in the guidance of Devtown</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="img-fluid" src="Screenshot (54).png" alt="project2" width="auto">
-                        </div>
-                        <div class="card-footer">
-                            <h4>Doreamon <a href="https://anushkaantra.github.io/Doreamon-MyFirstWebsite/"><img class="redirect" src="https://cdn-icons-png.flaticon.com/128/9661/9661440.png" alt="redirect" width="20px"></a></h4>
-                            <p>My First Website with HTML & CSS</p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="projects">
+               <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                         <div class="card">
+                              <div class="card-body">
+                                  <img class="img-fluid" src="Screenshot (57).png" alt="project1" width="auto">
+                              </div>
+                              <div class="card-footer">
+                                  <h4>Instagram Clone <a href="https://anushkaantra.github.io/InstagramClone/"><img class="redirect"  src="https://cdn-icons-png.flaticon.com/128/9661/9661440.png" alt="redirect" width="20px"></a></h4>
+                                  <p>Instagram Clone in the guidance of Devtown</p>
+                              </div>
+                          </div>
+                       </div>
+                       <div class="carousel-item">
+                           <div class="card">
+                               <div class="card-body">
+                               <img class="img-fluid" src="Screenshot (54).png" alt="project2" width="auto">
+                           </div>
+                           <div class="card-footer">
+                                <h4>Doreamon <a href="https://anushkaantra.github.io/Doreamon-MyFirstWebsite/"><img class="redirect" src="https://cdn-icons-png.flaticon.com/128/9661/9661440.png" alt="redirect" width="20px"></a></h4>
+                                <p>My First Website with HTML & CSS</p>
+                           </div>
+                       </div>
+                   </div>
+                  <div class="carousel-item">
                     <div class="card">
                         <div class="card-body">
                             <img class="img-fluid" src="Screenshot (104).png" alt="project1" width="auto">
@@ -204,9 +211,8 @@
                             <p>Working on making an E-Shop</p>
                         </div>
                     </div>
-                </div> 
-            </div>
-            <br>
+                </div>
+           </div>
         </section>
         <section id="div5">
             <div>
