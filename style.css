@@ -167,9 +167,9 @@ nav p:hover,li a:hover{
 }
 .title {
   color: white;
-  position: relative;
+  position: absolute;
   top: 15px;
-  padding: 5px;
+  padding: 10px;
 }
 .bar {
   position: absolute;
@@ -348,6 +348,9 @@ input[type="email"], #btn1{
     }
     .container{
         left: calc(45% - 180px);
+    }
+    .title{
+        padding: 0px;
     }
     .bar{
         width: 100px;
