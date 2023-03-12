@@ -174,7 +174,7 @@ nav p:hover,li a:hover{
 .bar {
   position: absolute;
   top: 100px;
-  left: 20px;
+  padding: 20px;
   height: 5px;
   width: 150px;
 }
@@ -350,10 +350,11 @@ input[type="email"], #btn1{
         left: calc(45% - 180px);
     }
     .title{
-        padding: 0px;
+        padding: 5px;
     }
     .bar{
         width: 100px;
+        padding: 5px;
     }
     .card:hover .filledbar {
         width: 80px;
