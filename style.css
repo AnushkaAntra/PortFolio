@@ -167,7 +167,7 @@ nav p:hover,li a:hover{
 }
 .title {
   color: white;
-  position: absolute;
+  position: relative;
   top: 15px;
   padding: 5px;
 }
