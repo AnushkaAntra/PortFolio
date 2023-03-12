@@ -168,8 +168,8 @@ nav p:hover,li a:hover{
 .title {
   color: white;
   position: absolute;
-  left: 20px;
   top: 15px;
+  padding: 5px;
 }
 .bar {
   position: absolute;
