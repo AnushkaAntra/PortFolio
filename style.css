@@ -167,12 +167,12 @@ nav p:hover,li a:hover{
 }
 .title {
   color: white;
-  position: absolute;
+  position: relative;
   top: 15px;
   padding: 10px;
 }
 .bar {
-  position: absolute;
+  position: relative;
   top: 100px;
   padding: 10px;
   height: 5px;
@@ -350,11 +350,11 @@ input[type="email"], #btn1{
         left: calc(45% - 180px);
     }
     .title{
-        padding: 3px;
+        padding: 5px;
     }
     .bar{
         width: 100px;
-        padding: 3px;
+        padding: 5px;
     }
     .card:hover .filledbar {
         width: 80px;
