@@ -168,8 +168,8 @@ nav p:hover,li a:hover{
 .title {
   color: white;
   position: absolute;
+  left: 20px;
   top: 15px;
-  padding: 10px;
 }
 .bar {
   position: absolute;
@@ -223,13 +223,16 @@ tr,td{
     text-align: center;
     color:white;
   }
-#div3 #table1, #table2 {
+#div3 #table1, #table2, #table3 {
     display: inline-block;
     padding: 1rem 1rem;
+    margin: 10px;
     vertical-align: middle;
+    background-color: #091720;
+    border-radius: 30px;
 }
 #div3 table td .progress{
-    width: 300px;
+    width: 200px;
     height:5px;
 }
 #div5{
@@ -336,25 +339,24 @@ input[type="email"], #btn1{
     #div4, #div3{
         height:auto;
     }
-    #div3 #table1,#table2{
+    #div3 #table1,#table2,#table3{
         margin:5px;
         padding: 10px 5px;
         border: 2px solid #28ABB9;
-        border-radius: 30px;
+        border-radius: 20px;
     }
     #div3 table td .progress{
         width:100px;
         height: 3px;
     }
     .container{
-        left: calc(45% - 180px);
+        left: calc(45% - 150px);
     }
     .title{
-        padding: 5px;
+        font-size: large;
     }
     .bar{
         width: 100px;
-        left: 10px;
     }
     .card:hover .filledbar {
         width: 80px;
@@ -392,9 +394,9 @@ input[type="email"], #btn1{
     #div4, #div3{
         height:auto;
     }
-    #div3 #table1,#table2{
+    #div3 #table1,#table2,#table3{
         border: 2px solid #28ABB9;
-        border-radius: 30px;
+        border-radius: 20px;
         margin: 5px;
     }
     #div5{
