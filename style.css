@@ -98,14 +98,14 @@ nav p:hover,li a:hover{
 #div2{
     background-color: black;
     width: 100%;
-    height: 500px;
+    height: 600px;
 }
 #div2 #about{
     padding:50px;
-    padding-top:100px;
+    padding-top:130px;
 }
 #div2 #image{
-    padding-top: 100px;
+    padding-top: 130px;
     display: grid;
     place-items: center;
 }
